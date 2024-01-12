@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Esto ayuda a incluir el padding y el borde en el ancho total */
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: #111729;
+  font-family: 'Outfit',sans-serif;
+
+}
+/* Estilos para los inputs */
+input {
+  border: 2px solid #6466E9;
+  background-color: #20293A;
+  padding: 0.3rem 0.6rem; /* Ajustar el padding para reducir el tamaño */
+  color: #6466E9;
+  border-radius: 15px; /* Reducir el radio del borde para un aspecto más compacto */
+  font-size: 10px; /* Reducir el tamaño de la fuente */
+  align-items: center;
+  margin-right: 4px;
+  user-select: none;
+}
+/* Estilos para el container general */
+.container {
+  border: none;
+  border-radius: 20px;
+  padding: 1.8rem;
+  display: grid;
+  place-items: center;
+  background-image: url('assets/bg-image-random-quote.svg');
+  background-position: right center; /* Ajusta la posición del SVG a la derecha y centrado verticalmente */
+  background-repeat: no-repeat; /* Esto asegura que la imagen de fondo no se repita */
+  background-color: #20293A;
+  max-width: 550px; /* Ajusta este valor según el ancho máximo deseado */
+}
+ /* Estilos para el interior del contenedor general */
+.container-quote {
+  display: grid;
+  place-items: center;
+}
+.author {
+  display: grid;
+  place-items: center;
+  margin-bottom: 30px;
+}
+.author h4 {
+  color: #fff;
+  margin-bottom: 13px;
+  user-select: none;
+}
+.container-quote p{
+  text-align: center;
+  width: 95%;
+}
+/* Estilos par el contenedor de botones de random y copiar */
+.container-btn {
+  display: flex; /* Utilizar flexbox para alinear los botones horizontalmente */
+  justify-content: center; /* Centrar los botones horizontalmente */
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 400px;
+  user-select: none;
+}
+.container-btn button {
+  padding: 20px 30px;
+  font-size: 12px;
+  background-repeat: no-repeat;
+  background-color: #111729;
+  background-position: center;
+  color: #fff;
+  border: 1px solid #4A5567;
+  cursor: pointer;
+}
+
+/* Estilo para el primer botón */
+.container-btn button[data-type="first"] {
+  background-image: url('assets/Regroup.svg'); /* SVG para el primer botón */
+  border-radius: 10px 0 0 10px;
+  background-size: contain;
+}
+
+/* Estilo para el segundo botón */
+.container-btn button[data-type="second"] {
+  background-image: url('assets/link.svg'); /* SVG para el segundo botón */
+  border-radius: 0px 10px 10px 0px;
+  background-size: contain;
+}

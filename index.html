@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+    />
+    <title>CHALLENGE_JS_3</title>
+  </head>
+  <body>
+    <!-- contenedor general -->
+    <div class="container">
+      <!-- contenedor del author y quote -->
+      <div class="container-quote">
+        <!-- author -->
+        <div class="author">
+          <h4 id="author-name" style="font-size: 16px"></h4>
+          <!-- tipos de quote -->
+          <div class="author-types">
+            <input type="button" value="Famous Quotes" />
+            <input type="button" value="Inspirational" />
+          </div>
+        </div>
+        <!-- la frase -->
+        <p id="quote" style="font-size: 24px; color: #4a5567"></p>
+      </div>
+    </div>
+    <!-- bottones -->
+    <div class="container-btn">
+      <button id="random" data-type="first"></button>
+      <button id="copy" data-type="second"></button>
+    </div>
+
+    <script src="quote.js"></script>
+  </body>
+</html>
